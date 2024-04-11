@@ -13,7 +13,7 @@ provider "google" {
   region      = var.region
 }
 
-resource "google_storage_bucket" "book_recommendation_datalake" {
+resource "google_storage_bucket" "book_datalake" {
   name     = "datalake-${var.project}"
   location = var.region
 
@@ -37,16 +37,16 @@ resource "google_storage_bucket" "book_recommendation_datalake" {
   force_destroy = true
 }
 
-resource "google_bigquery_dataset" "book_recommendataion_ext_dataset" {
+resource "google_bigquery_dataset" "book_ext_dataset" {
   project                    = var.project
   location                   = var.region
-  dataset_id                 = var.book_recommendataion_ext_datasets
+  dataset_id                 = var.book_ext_datasets
   delete_contents_on_destroy = true
 }
 
-resource "google_bigquery_dataset" "book_recommendation_analytics_dataset" {
+resource "google_bigquery_dataset" "book_analytics_dataset" {
   project                    = var.project
   location                   = var.region
-  dataset_id                 = var.book_recommendation_analytics_datasets
+  dataset_id                 = var.book_analytics_datasets
   delete_contents_on_destroy = true
 }

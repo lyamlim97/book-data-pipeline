@@ -21,13 +21,13 @@ variable "storage_class" {
   default     = "STANDARD"
 }
 
-variable "book_recommendataion_ext_datasets" {
+variable "book_ext_datasets" {
   type        = string
   description = "Dataset in BigQuery where raw data (external tables) will be loaded."
-  default     = "book_wh"
+  default     = "book_ext"
 }
 
-variable "book_recommendation_analytics_datasets" {
+variable "book_analytics_datasets" {
   type        = string
   description = "Dataset in BigQuery where raw data (from Google Cloud Storage and DBT) will be loaded."
   default     = "book_analytics"

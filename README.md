@@ -29,9 +29,16 @@
                 <li>
                     <a href="#set-up-the-infrastructure-on-GCP-with-terraform">Set up the infrastructure on GCP with Terraform</a>
                 </li>
+                <li>
+                    <a href="#set-up-Airflow">Set up Airflow</a>
+                </li>
             </ul>
+            <li>
+                <a href="#data-ingestion">Data Ingestion</a>
+            </li>
         </li>
     </ol>
+
 </details>
 
 ## Introduction

@@ -15,4 +15,4 @@ override.tf.json
 *_override.tf.json
 .terraformrc
 terraform.rc
-data_airflow/logs/*
+airflow/logs/*
